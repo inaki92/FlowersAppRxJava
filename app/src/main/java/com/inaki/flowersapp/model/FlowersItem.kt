@@ -1,6 +1,7 @@
 package com.inaki.flowersapp.model
 
 import com.google.gson.annotations.SerializedName
+import com.inaki.flowersapp.KotlinExample
 
 /**
  * This data class is our POJO parsed from JSON
@@ -14,7 +15,7 @@ data class FlowersItem(
     @SerializedName("instructions")
     val instructions: String,
     @SerializedName("name")
-    val name: String,
+    val name: String?,
     @SerializedName("photo")
     val photo: String,
     @SerializedName("price")
